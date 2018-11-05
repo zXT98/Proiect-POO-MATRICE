@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1541330178 source:d:\poo\proiect poo 1\matrix.cpp
+1541442494 source:d:\poo\proiect poo 1\matrix.cpp
 	"matrix.hpp"
 
-1541329617 d:\poo\proiect poo 1\matrix.hpp
+1541442496 d:\poo\proiect poo 1\matrix.hpp
 	<iostream>
 
-1541333271 source:d:\poo\proiect poo 1\main.cpp
+1541443227 source:d:\poo\proiect poo 1\main.cpp
 	"matrix.hpp"
 	<iostream>
 	<stdlib.h>

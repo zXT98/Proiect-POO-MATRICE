@@ -11,18 +11,18 @@ public:
 	matrix(const matrix &m);//
 	~matrix();//
 
-    matrix& operator=(const matrix& m);
+    matrix& operator=(const matrix& m);//
 
-	matrix& operator+=(const matrix &m);
-	matrix& operator-=(const matrix &m);
-	matrix& operator*=(const matrix &m);
+	matrix& operator+=(const matrix &m);//
+	matrix& operator-=(const matrix &m);//
+	matrix& operator*=(const matrix &m);//
 
-	matrix& operator+=(int scalar);
-	matrix& operator-=(int scalar);
-	matrix& operator*=(int scalar);
-	matrix& operator/=(int scalar);
+	matrix& operator+=(double scalar);//
+	matrix& operator-=(double scalar);//
+	matrix& operator*=(double scalar);//
+	matrix& operator/=(double scalar);//
 
-    matrix operator[](int pos);
+    matrix operator[](int pos);//
 
 	friend std::istream &operator>>(std::istream &in,matrix &m);//
 	friend std::ostream &operator<<(std::ostream &out,const matrix &m);//
@@ -30,21 +30,21 @@ public:
 	friend matrix operator+(const matrix m1,const matrix m2);//
 	friend matrix operator-(const matrix m1,const matrix m2);//
 	friend matrix operator*(const matrix m1,const matrix m2);//
-	friend matrix operator+(const matrix m, int scalar);//
-	friend matrix operator-(const matrix m, int scalar);//
-	friend matrix operator*(const matrix m, int scalar);//
-	friend matrix operator/(const matrix m, int scalar);
-	friend matrix operator+(int scalar,const matrix m1);//
-	friend matrix operator-(int scalar,const matrix m1);//
-	friend matrix operator*(int scalar,const matrix m1);//
-	friend matrix operator/(int scalar,const matrix m);//
+	friend matrix operator+(const matrix m, double scalar);//
+	friend matrix operator-(const matrix m, double scalar);//
+	friend matrix operator*(const matrix m, double scalar);//
+	friend matrix operator/(const matrix m, double scalar);
+	friend matrix operator+(double scalar,const matrix m1);//
+	friend matrix operator-(double scalar,const matrix m1);//
+	friend matrix operator*(double scalar,const matrix m1);//
+	friend matrix operator/(double scalar,const matrix m);//
 	friend matrix operator^(const matrix m, int pow);//
 
-    friend matrix operator+(const matrix& m);
-    friend matrix operator-(const matrix& m);
+    friend matrix operator+(const matrix& m);//
+    friend matrix operator-(const matrix& m);//
 
-    friend bool operator==(const matrix& m1,const matrix& m2);
-    friend bool operator!=(const matrix& m1,const matrix& m2);
+    friend bool operator==(const matrix& m1,const matrix& m2);//
+    friend bool operator!=(const matrix& m1,const matrix& m2);//
 private:
 	int m_lines, m_columns;
 	double **m_buffer;
