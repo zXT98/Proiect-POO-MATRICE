@@ -11,8 +11,8 @@ int main(int argc, char** argv)
 
 	std::cout<<"Matricea 1: "<<std::endl;
 	std::cin>>m1;
-	std::cout<<"Matricea 2: "<<std::endl;
-	std::cin>>m2;
+	//std::cout<<"Matricea 2: "<<std::endl;
+	//std::cin>>m2;
 
 	///std::cout<<"Matricea m1 este: "<<std::endl<<m1<<std::endl;
     ///std::cout<<"Matricea m2 este: "<<std::endl<<m2<<std::endl;
@@ -55,12 +55,12 @@ int main(int argc, char** argv)
     }*/
 
 
-    /*try{
+    try{
     std::cout<<"Matrice la putere: "<<std::endl<<(m1^(3))<<std::endl;
     }catch(int x)
     {
         if(x==50) std::cout<<"Nu are loc ridicarea la putere!"<<std::endl;
-    }*/
+    }
 
 
     ///std::cout<<std::endl<<(m1[0])<<std::endl;

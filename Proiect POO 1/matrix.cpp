@@ -450,7 +450,7 @@ matrix matrix::operator[](int pos)
     }
     else
     {
-        matrix result(1,m_lines);
+        matrix result(1,m_columns);
         for(int i=0; i<m_columns; i++)
             result.m_buffer[0][i]=m_buffer[pos][i];
         return result;
